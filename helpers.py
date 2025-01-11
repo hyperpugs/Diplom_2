@@ -42,7 +42,7 @@ class CreateRandomUser:
         }
         return user
 
-class RandomUserWithoutFields():
+class RandomUserWithoutFields(CreateRandomUser):
     user_without_email = CreateRandomUser.create_random_user_without_email()
     user_without_password = CreateRandomUser.create_random_user_without_password()
     user_without_name = CreateRandomUser.create_random_user_without_name()
@@ -51,9 +51,9 @@ class RealUserData:
     @staticmethod
     def registrated_user():
         user = {
-            'email': 'NikolayKluchnikov10100@mail.ru',
-            'password': '123456',
-            'name': '123456'
+            'email': 'samarskiy@ya.com',
+            'password': '123456qwe',
+            'name': 'Sasha'
         }
         return user
 
@@ -61,24 +61,24 @@ class RealUserData:
     @staticmethod
     def real_user_data():
         user = {
-            'email': 'NikolayKluchnikov10100@mail.ru',
-            'password': '123456',
+            'email': 'samarskiy@ya.com',
+            'password': '123456qwe',
         }
         return user
 
     @staticmethod
     def wrong_email():
         user = {
-            'email': 'Ni1kolayKluc3hnikov10100@mail.ru',
-            'password': '123456',
+            'email': 'samarskiy@ya.com',
+            'password': '12345644wet',
         }
         return user
 
     @staticmethod
     def wrong_password():
         user = {
-            'email': 'NikolayKluchnikov10100@mail.ru',
-            'password': '99599',
+            'email': 'samarskiy@ya.com',
+            'password': '55dwgqwe',
         }
         return user
 
