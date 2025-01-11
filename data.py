@@ -1,11 +1,10 @@
 class Urls:
-
     BASE_URL = 'https://stellarburgers.nomoreparties.site/'
-    CREATE = 'api/auth/register'
-    LOG_IN = 'api/auth/login'
-    UPDATE_USER = 'api/auth/user'
-    CREATE_ORDER = 'api/orders'
-    GET_ORDER = 'api/orders'
+    CREATE = f"{BASE_URL}/api/auth/register"
+    LOG_IN = f"{BASE_URL}/api/auth/login"
+    UPDATE_USER = f"{BASE_URL}/api/auth/user"
+    CREATE_ORDER = f"{BASE_URL}/api/orders"
+    GET_ORDER = f"{BASE_URL}/api/orders"
 
 class ServerAnswers:
     registrated_user = 'User already exists'
